@@ -1,0 +1,78 @@
+@import 'bourbon';
+@import 'neat';
+
+$main-color: #c63;
+$accent-color: #39c;
+$main-font: 'Philosopher', sans-serif;
+$secondary-font: 'Open Sans', sans-serif;
+$map-font: 'AvenirNext-Bold', 'Avenir Next';
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.map {
+  width: 100vw;
+}
+
+.map_background {
+  fill: $main-color;
+}
+
+.map_circleText {
+  font-family: $map-font;
+  font-weight: bold;
+}
+
+.map_circle {
+  transition: fill 0.25s;
+}
+
+.map_circleText {
+  transition: fill 0.25s;
+}
+
+.map_restaurant:hover {
+  .map_circle {
+    fill: $accent-color;
+  }
+  .map_circleText {
+    fill: white;
+  }
+}
+
+.restaurantList_header {
+  font-family: $main-font;
+  padding-left: 30px;
+  border-bottom: solid;
+}
+
+.restaurantList_name {
+  font-family: $main-font;
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+  line-height: 0.8em;
+}
+.restaurantList_address {
+  font-family: $secondary-font;
+  padding-top: 0;
+  padding-bottom: 8px;
+  line-height: 0.8em;
+}
+
+.mapandlist {
+  display: flex;
+  align-items: flex-start;
+}
+
+.restaurantList {
+  height: 90vh;
+  width: 45%;
+  overflow: scroll;
+}
+
+.restaurantList_restaurant:hover {
+  color: $accent-color;
+}

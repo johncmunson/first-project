@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.map {
+  width: 100vw; }
+
+.map_background {
+  fill: #c63; }
+
+.map_circleText {
+  font-family: "AvenirNext-Bold", "Avenir Next";
+  font-weight: bold; }
+
+.map_circle {
+  transition: fill 0.25s; }
+
+.map_circleText {
+  transition: fill 0.25s; }
+
+.map_restaurant:hover .map_circle {
+  fill: #39c; }
+
+.map_restaurant:hover .map_circleText {
+  fill: white; }
+
+.restaurantList_header {
+  font-family: "Philosopher", sans-serif;
+  padding-left: 30px;
+  border-bottom: solid; }
+
+.restaurantList_name {
+  font-family: "Philosopher", sans-serif;
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+  line-height: 0.8em; }
+
+.restaurantList_address {
+  font-family: "Open Sans", sans-serif;
+  padding-top: 0;
+  padding-bottom: 8px;
+  line-height: 0.8em; }
+
+.mapandlist {
+  display: flex;
+  align-items: flex-start; }
+
+.restaurantList {
+  height: 90vh;
+  width: 45%;
+  overflow: scroll; }
+
+.restaurantList_restaurant:hover {
+  color: #39c; }
+
+
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/*# sourceMappingURL=maps/styles.css.map */
